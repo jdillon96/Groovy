@@ -2,3 +2,10 @@
 
 # Groovy
 Music in, software out.
+
+
+## Team Members:
+* Diego Cuadros
+* Jay Dillon
+* Westley Holmes
+* Jesus Lopez
