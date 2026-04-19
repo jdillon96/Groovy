@@ -1,0 +1,34 @@
+{
+  "name": "groovy",
+  "version": "1.0.0",
+  "description": "A programming language for CMSI-3802 that turns audio input into code",
+  "keywords": [
+    "lang"
+  ],
+  "homepage": "https://github.com/jdillon96/CMSI-3802#readme",
+  "bugs": {
+    "url": "https://github.com/jdillon96/CMSI-3802/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdillon96/CMSI-3802.git"
+  },
+  "license": "ISC",
+  "author": "Jay Dillon",
+  "type": "module",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "example": "examples",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "c8 node --test test/**/*.test.js"
+  },
+  "dependencies": {
+    "c8": "^11.0.0",
+    "graph-stringify": "^1.1.0",
+    "ohm-js": "^17.5.0",
+    "tone": "^15.1.22"
+  }
+}
