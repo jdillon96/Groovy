@@ -1,13 +1,14 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/jdillon96/CMSI-3802/main/docs/Groovy-logo.png" height="160" alt="Groovy Logo">
+  <img src="docs/Groovy-logo.png" height="256" alt="Groovy Logo">
 
-  # Groovy
+# Groovy
 
-  *Music in. Software out.*
+_Music in. Software out._
 
-  [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](LICENSE)
-  [![Tests](https://img.shields.io/badge/tests-passing-brightgreen)](#)
-  [![Compiles to](https://img.shields.io/badge/compiles%20to-JavaScript-yellow)](#)
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](LICENSE)
+[![Tests](https://img.shields.io/badge/tests-passing-brightgreen)](#)
+[![Compiles to](https://img.shields.io/badge/compiles%20to-JavaScript-yellow)](#)
+
 </div>
 
 ---
@@ -34,30 +35,30 @@ Groovy is a statically-typed, music-themed programming language that compiles to
 
 ## Quick Reference
 
-| Groovy | Meaning |
-|--------|---------|
-| `note` | mutable variable |
-| `key` | immutable constant |
-| `chord` | struct / record type |
-| `compose` | function declaration |
-| `fin` | return |
-| `play` | print to stdout |
-| `cue` / `alt` / `drop` | if / else-if / else |
-| `vamp` | while loop |
-| `measure … from … to` | numeric range loop |
-| `measure … in` | collection loop |
-| `encore N` | repeat N times |
-| `cut` | break |
-| `cadence` | end-of-block terminator |
-| `open` / `closed` | true / false |
-| `ghost` | optional type wrapper |
-| `sharp` / `flat` | `++` / `--` |
-| `^` | exponentiation |
-| `??` | unwrap-else (optional) |
-| `level` | number |
-| `lyric` | string |
-| `gate` | boolean |
-| `silence` | void (no return) |
+| Groovy                 | Meaning                 |
+| ---------------------- | ----------------------- |
+| `note`                 | mutable variable        |
+| `key`                  | immutable constant      |
+| `chord`                | struct / record type    |
+| `compose`              | function declaration    |
+| `fin`                  | return                  |
+| `play`                 | print to stdout         |
+| `cue` / `alt` / `drop` | if / else-if / else     |
+| `vamp`                 | while loop              |
+| `measure … from … to`  | numeric range loop      |
+| `measure … in`         | collection loop         |
+| `encore N`             | repeat N times          |
+| `cut`                  | break                   |
+| `cadence`              | end-of-block terminator |
+| `open` / `closed`      | true / false            |
+| `ghost`                | optional type wrapper   |
+| `sharp` / `flat`       | `++` / `--`             |
+| `^`                    | exponentiation          |
+| `??`                   | unwrap-else (optional)  |
+| `level`                | number                  |
+| `lyric`                | string                  |
+| `gate`                 | boolean                 |
+| `silence`              | void (no return)        |
 
 ---
 
@@ -66,11 +67,13 @@ Groovy is a statically-typed, music-themed programming language that compiles to
 The Groovy analyzer catches the following errors at compile time:
 
 **Scope & Declarations**
+
 - Using an undeclared identifier
 - Re-declaring a variable in the same scope
 - Assigning to an immutable `key` variable (including function parameters)
 
 **Type Checking**
+
 - Non-numeric operands in arithmetic (`+`, `-`, `*`, `/`, `%`, `^`)
 - Non-boolean operands in logical expressions (`&&`, `||`, `!`)
 - Non-boolean condition in `cue`, `alt`, or `vamp`
@@ -79,16 +82,19 @@ The Groovy analyzer catches the following errors at compile time:
 - Mixed-type elements in an array literal
 
 **Functions**
+
 - Calling a non-function
 - Wrong number of arguments
 - Argument type mismatch against declared parameter types
 
 **Structs**
+
 - Member access on a non-`chord` type
 - Accessing a field that doesn't exist on a `chord`
 - Optional chaining (`?.`) on a non-`chord` type
 
 **Optionals & Arrays**
+
 - Using `??` on a non-`ghost` (non-optional) value
 - Mismatched types in an unwrap-else expression
 - Using `in` iteration on a non-array
@@ -148,10 +154,10 @@ play x + y
 
 ```javascript
 let x_1 = 4;
-let y_2 = (x_1 ** 3);
+let y_2 = x_1 ** 3;
 x_1++;
 x_1--;
-console.log((x_1 + y_2));
+console.log(x_1 + y_2);
 ```
 
 </td>
@@ -185,9 +191,9 @@ cadence
 ```javascript
 let x_1 = 5;
 
-if ((x_1 < 0)) {
+if (x_1 < 0) {
   console.log("negative");
-} else if ((x_1 === 0)) {
+} else if (x_1 === 0) {
   console.log("zero");
 } else {
   console.log("positive");
@@ -220,9 +226,9 @@ cadence
 
 ```javascript
 let i_1 = 0;
-while ((i_1 < 5)) {
+while (i_1 < 5) {
   console.log(i_1);
-  i_1 = (i_1 + 1);
+  i_1 = i_1 + 1;
 }
 ```
 
@@ -343,7 +349,7 @@ greet("Groovy")
 
 ```javascript
 function add_1(x_2, y_3) {
-  return (x_2 + y_3);
+  return x_2 + y_3;
 }
 function greet_4(name_5) {
   console.log(name_5);
@@ -420,7 +426,7 @@ play result
 
 ```javascript
 let maybeScore_1 = 42;
-let result_2 = (maybeScore_1 ?? 0);
+let result_2 = maybeScore_1 ?? 0;
 console.log(result_2);
 ```
 
@@ -484,11 +490,11 @@ cadence
 
 ```javascript
 let i_1 = 0;
-while ((i_1 < 100)) {
-  if ((i_1 === 5)) {
+while (i_1 < 100) {
+  if (i_1 === 5) {
     break;
   }
-  i_1 = (i_1 + 1);
+  i_1 = i_1 + 1;
 }
 ```
 
@@ -506,12 +512,12 @@ Visit the Groovy project site:
 
 ## Team
 
-| Name | GitHub |
-|------|--------|
-| Diego Cuadros | — |
-| Jay Dillon | [@jdillon96](https://github.com/jdillon96) |
-| Westley Holmes | [@WesHolmes](https://github.com/WesHolmes)|
-| Jesus Lopez | — |
+| Name           | GitHub                                     |
+| -------------- | ------------------------------------------ |
+| Diego Cuadros  | —                                          |
+| Jay Dillon     | [@jdillon96](https://github.com/jdillon96) |
+| Westley Holmes | [@WesHolmes](https://github.com/WesHolmes) |
+| Jesus Lopez    | —                                          |
 
 ---
 
