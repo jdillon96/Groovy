@@ -20,7 +20,7 @@ _Music in. Software out._
 | Diego Cuadros | [@diegocuadros1](https://github.com/diegocuadros1) |
 | Jay Dillon | [@jdillon96](https://github.com/jdillon96) |
 | Westley Holmes | [@WesHolmes](https://github.com/WesHolmes) |
-| Jesus Lopez | — |
+| Jesus Lopez | [@jalopezW](https://github.com/jalopezW) |
 
 ---
 
