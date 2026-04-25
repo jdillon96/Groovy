@@ -26,11 +26,15 @@ _Music in. Software out._
 
 ## The Story
 
-Groovy is an esolang that converts audio input to text output through a MIDI-to-source encoding pipeline. You write programs by placing notes in a DAW — the channel a note lives on determines what kind of character it produces, and the pitch selects the specific character via modulo arithmetic. Export the MIDI, run it through Groovy, and your performance becomes source code that compiles to JavaScript.
+Groovy is an esolang that converts audio input to text output through a MIDI-to-source encoding pipeline. You write programs by placing notes in a DAW(Digital Audio Work Station) — the channel a note lives on determines what kind of character it produces, and the pitch selects the specific character via modulo arithmetic. Export the MIDI, run it through Groovy, and your performance becomes source code that compiles to JavaScript.
 
-The language itself is music-themed throughout. Every keyword comes from music vocabulary: variables are `note`s, constants are `key`s, functions are `compose`d, loops are `measure`s and `vamp`s, conditionals are `cue`s. Writing Groovy text feels like annotating a score. Performing it feels like playing one.
+The language itself is music-themed. Every keyword comes from music vocabulary: variables are `note`s, constants are `key`s, functions are `compose`d, loops are `measure`s and `vamp`s, conditionals are `cue`s.
 
-Groovy was built as a semester-long compiler project for CMSI-3802 at LMU, covering lexing, parsing, semantic analysis, optimization, and code generation end-to-end.
+No matter who you are or where you're from, music is globally understood and enjoyed. It crosses language barriers, cultures, and borders. It's one of the few things that truly belongs to everyone.
+
+Introducing Groovy — a language that everyone can get down to.
+
+Groovy was built as a semester long compiler project for CMSI-3802 at LMU, covering lexing, parsing, semantic analysis, optimization, and code generation end-to-end.
 
 ---
 
@@ -102,32 +106,6 @@ The five primitive types are `level` (number), `lyric` (string), `gate` (boolean
 
 ## Quick Reference
 
-<<<<<<< Updated upstream
-| Groovy                 | Meaning                 |
-| ---------------------- | ----------------------- |
-| `note`                 | mutable variable        |
-| `key`                  | immutable constant      |
-| `chord`                | struct / record type    |
-| `compose`              | function declaration    |
-| `fin`                  | return                  |
-| `play`                 | print to stdout         |
-| `cue` / `alt` / `drop` | if / else-if / else     |
-| `vamp`                 | while loop              |
-| `measure … from … to`  | numeric range loop      |
-| `measure … in`         | collection loop         |
-| `encore N`             | repeat N times          |
-| `cut`                  | break                   |
-| `cadence`              | end-of-block terminator |
-| `open` / `closed`      | true / false            |
-| `ghost`                | optional type wrapper   |
-| `sharp` / `flat`       | `++` / `--`             |
-| `^`                    | exponentiation          |
-| `??`                   | unwrap-else (optional)  |
-| `level`                | number                  |
-| `lyric`                | string                  |
-| `gate`                 | boolean                 |
-| `silence`              | void (no return)        |
-=======
 | Groovy | Meaning |
 |--------|---------|
 | `note` | mutable variable |
@@ -156,7 +134,6 @@ The five primitive types are `level` (number), `lyric` (string), `gate` (boolean
 | `noise` | any type |
 | `sqrt` | square root (standard library) |
 | `hypot` | hypotenuse (standard library) |
->>>>>>> Stashed changes
 
 ---
 
@@ -606,22 +583,7 @@ while (i_1 < 100) {
 
 ## GitHub Pages
 
-<<<<<<< Updated upstream
-Visit the Groovy project site:
-
----
-
-## Team
-
-| Name           | GitHub                                     |
-| -------------- | ------------------------------------------ |
-| Diego Cuadros  | —                                          |
-| Jay Dillon     | [@jdillon96](https://github.com/jdillon96) |
-| Westley Holmes | [@WesHolmes](https://github.com/WesHolmes) |
-| Jesus Lopez    | —                                          |
-=======
 Visit the Groovy project site: [diegocuadros1.github.io](https://diegocuadros1.github.io/)
->>>>>>> Stashed changes
 
 ---
 
