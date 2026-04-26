@@ -15,32 +15,25 @@ _Music in. Software out._
 
 ## Team
 
-| Name | GitHub |
-|------|--------|
-| Diego Cuadros | [@diegocuadros1](https://github.com/diegocuadros1) |
-| Jay Dillon | [@jdillon96](https://github.com/jdillon96) |
-| Westley Holmes | [@WesHolmes](https://github.com/WesHolmes) |
-| Jesus Lopez | [@jalopezW](https://github.com/jalopezW) |
+| Name | Diego Cuadros | Jay Dillon | Westley Holmes | Jesus Lopez |
+|------|--------| ------|--------| --------|
+| GitHub | [@diegocuadros1](https://github.com/diegocuadros1) | [@jdillon96](https://github.com/jdillon96) | [@WesHolmes](https://github.com/WesHolmes) | [@jalopezW](https://github.com/jalopezW) |
 
 ---
 
 ## The Story
 
-Groovy is an esolang that converts audio input to text output through a MIDI-to-source encoding pipeline. You write programs by placing notes in a DAW(Digital Audio Work Station) — the channel a note lives on determines what kind of character it produces, and the pitch selects the specific character via modulo arithmetic. Export the MIDI, run it through Groovy, and your performance becomes source code that compiles to JavaScript.
+Groovy is an esolang that converts audio input to code output through a MIDI-to-source code encoding pipeline. Programs are made by placing notes in a digital editor, with the channel a note lives on determining what kind of character it produces, and the pitch selecting the specific character via modulo arithmetic. Export the MIDI, run it through Groovy, and your performance becomes source code that compiles to JavaScript.
 
-The language itself is music-themed. Every keyword comes from music vocabulary: variables are `note`s, constants are `key`s, functions are `compose`d, loops are `measure`s and `vamp`s, conditionals are `cue`s.
+MIDI files are translated into a text representation that is music themed. Every keyword comes from music vocabulary: variables are `note`s, constants are `key`s, functions are `compose`d, loops are `measure`s and `vamp`s, conditionals are `cue`s.
 
-No matter who you are or where you're from, music is globally understood and enjoyed. It crosses language barriers, cultures, and borders. It's one of the few things that truly belongs to everyone.
-
-Introducing Groovy — a language that everyone can get down to.
-
-Groovy was built as a semester long compiler project for CMSI-3802 at LMU, covering lexing, parsing, semantic analysis, optimization, and code generation end-to-end.
+Groovy was built as a semester long compiler project for CMSI 3802 at LMU.
 
 ---
 
 ## Audio Encoding
 
-Every Groovy program can be authored and performed as a MIDI file. The preprocessor reads the notes, figures out what characters they represent, and reconstructs the source text — which then flows into the normal compile pipeline.
+Every Groovy program can be authored and performed as a MIDI file. The preprocessor reads the notes, figures out what characters they represent, and reconstructs the source text, which then flows into the normal compile pipeline.
 
 ### Channel Routing
 
@@ -90,7 +83,7 @@ The five primitive types are `level` (number), `lyric` (string), `gate` (boolean
 
 ## Features
 
-- **Dual input modes** — write programs as MIDI files in a DAW or as plain-text `.gvy` source
+- **Dual input modes** — write programs as MIDI files in a DAW or as plain-text `.groovy` source
 - **Music-themed syntax** — every keyword comes from musical vocabulary
 - **Static typing** — five primitive types: `level`, `lyric`, `gate`, `silence`, `noise`
 - **Optional types** — first-class `ghost` types with `??` unwrap-else semantics
@@ -174,6 +167,12 @@ The Groovy analyzer catches the following errors at compile time:
 - Mismatched types in an unwrap-else expression
 - Using `in` iteration on a non-array
 - Subscripting a non-array
+
+---
+
+## Language Website
+
+Visit the Groovy project site: [Link](https://diegocuadros1.github.io/)
 
 ---
 
@@ -578,12 +577,6 @@ while (i_1 < 100) {
 </td>
 </tr>
 </table>
-
----
-
-## GitHub Pages
-
-Visit the Groovy project site: [diegocuadros1.github.io](https://diegocuadros1.github.io/)
 
 ---
 
